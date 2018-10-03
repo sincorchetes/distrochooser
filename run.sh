@@ -4,9 +4,9 @@
 echo "Welcome to Distro Chooser, download your custom ISO"
 
 ############## ARCHLINUX #######################################################
-ARCHLINUX_MIRROR="http://ftp.rediris.es/mirror/archlinux/iso/2018.07.01/"
+ARCHLINUX_MIRROR="http://ftp.rediris.es/mirror/archlinux/iso/latest/"
 ARCHLINUX_FILES=(
-archlinux-2018.07.01-x86_64.iso
+archlinux-2018.09.01-x86_64.iso
 )
 
 ############## ARCHLINUX EOF ###################################################
@@ -107,19 +107,19 @@ case $OP1 in
 ############################################# SECOND CASE #########################
 		case $OP2 in
 			1)
-				wget -c $CENTOS_MIRROR/${ARCHi[4]}/${CENTOS_FILES[4]} -P iso
+				wget -c $CENTOS_MIRROR/${ARCHi[5]}/${CENTOS_FILES[4]} -P iso
 				;;
 			2)
-				wget -c $CENTOS_MIRROR/${ARCHi[4]}/${CENTOS_FILES[0]} -P iso
+				wget -c $CENTOS_MIRROR/${ARCHi[5]}/${CENTOS_FILES[0]} -P iso
 				        ;;
 			3)
-				wget -c	$CENTOS_MIRROR/${ARCHi[4]}/${CENTOS_FILES[1]} -P iso
+				wget -c	$CENTOS_MIRROR/${ARCHi[5]}/${CENTOS_FILES[1]} -P iso
 				        ;;
 			4)
-				wget -c	$CENTOS_MIRROR/${ARCHi[4]}/${CENTOS_FILES[2]} -P iso
+				wget -c	$CENTOS_MIRROR/${ARCHi[5]}/${CENTOS_FILES[2]} -P iso
 				        ;;
 			5)
-				wget -c	$CENTOS_MIRROR/${ARCHi[4]}/${CENTOS_FILES[3]} -P iso
+				wget -c	$CENTOS_MIRROR/${ARCHi[5]}/${CENTOS_FILES[3]} -P iso
 				        ;;
 		esac
 ############################################# END SECOND CASE ######################
